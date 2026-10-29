@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'Trang1.dart';
+import 'Trang2.dart';
+import 'Trang3.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,9 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ho So Ca Nhan',
-      theme: ThemeData(primarySwatch: Colors.indigo),
-      home: Trang1(),
+      debugShowCheckedModeBanner: false,
+      title: 'Trang chủ',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFB52C35)),
+        useMaterial3: true,
+      ),
+      home: Trang3(),
     );
   }
 }
